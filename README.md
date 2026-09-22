@@ -1,7 +1,25 @@
-# Vue 3 + Vite
+# Awesome Dashboard
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A Vue 3 + Vite single-page app with four routed pages (Overview, Sales, Customers, Settings), built on the [`simple-vue-components`](https://github.com/Hypotheek/Simple-Custom-ComponentLibrary) design system.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Setup
 
-Maakt gebruik van deze componenten bibliotheek: https://github.com/Hypotheek/Simple-Custom-ComponentLibrary/tree/master
+```bash
+npm install
+npm run dev
+```
+
+Then open the printed local URL (defaults to `http://localhost:5173`).
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## About the component library dependency
+
+`simple-vue-components` isn't published to the npm registry. This repo vendors a prebuilt tarball at [`vendor/simple-vue-components-0.0.2.tgz`](vendor/simple-vue-components-0.0.2.tgz), referenced directly in `package.json`, so `npm install` works out of the box without needing local access to the library's source repo.
+
+To pick up a newer version of the library, rebuild it from its own repo (`npm pack`) and replace the tarball in `vendor/`.
