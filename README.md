@@ -20,6 +20,6 @@ npm run preview
 
 ## About the component library dependency
 
-`simple-vue-components` isn't published to the npm registry. This repo vendors a prebuilt tarball at [`vendor/simple-vue-components-0.0.2.tgz`](vendor/simple-vue-components-0.0.2.tgz), referenced directly in `package.json`, so `npm install` works out of the box without needing local access to the library's source repo.
+`simple-vue-components` isn't published to the npm registry. This repo vendors a prebuilt tarball at [`vendor/simple-vue-components-0.0.3.tgz`](vendor/simple-vue-components-0.0.3.tgz), referenced directly in `package.json`, so `npm install` works out of the box without needing local access to the library's source repo.
 
 To pick up a newer version of the library, rebuild it from its own repo (`npm pack`) and replace the tarball in `vendor/`.

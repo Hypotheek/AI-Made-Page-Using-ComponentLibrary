@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "simple-vue-components": "file:vendor/simple-vue-components-0.0.2.tgz",
+    "simple-vue-components": "file:vendor/simple-vue-components-0.0.3.tgz",
     "vue": "^3.5.42"
   },
   "devDependencies": {
